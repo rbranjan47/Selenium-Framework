@@ -98,7 +98,6 @@ public class baseTest
 		{
 			//WebDriverManager.edgedriver().setup();
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + File.separator +"drivers" + File.separator + "msedgedriver.exe");
-			driver = new EdgeDriver();
-		}
+			driver = new EdgeDriver();	}
 	}
 }
