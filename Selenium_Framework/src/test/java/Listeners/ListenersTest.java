@@ -31,13 +31,13 @@ public class ListenersTest extends baseTest implements ITestListener, IAnnotatio
 
 	// calling the extent reports method
 	ExtentReports extent_report = extent_reports.get_reportObject();
-	// To make thread safe, whenever test cases will run parallely
+
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	// IT WILL EXECUTE ON TEST START
 	@Override
 	public void onTestStart(ITestResult result) {
-		// we are getting method name by GET PROPERTY method
+
 		test = extent_report.createTest(result.getTestClass().getName() + "->" + result.getMethod().getMethodName());
 		extentTest.set(test);
 	}
@@ -67,7 +67,6 @@ public class ListenersTest extends baseTest implements ITestListener, IAnnotatio
 		markup = MarkupHelper.createLabel(log_text, ExtentColor.RED);
 		extentTest.get().log(Status.FAIL, markup);
 
-		// getting driver from the base class as Ilisterners is not taking driver
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
 					.get(result.getInstance());
@@ -87,39 +86,47 @@ public class ListenersTest extends baseTest implements ITestListener, IAnnotatio
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		ITestListener.super.onTestSkipped(result);
+		String testcaseMethod_Name = result.getMethod().getMethodName();
+		String log_text = "<b> Test Case " + testcaseMethod_Name + "  has Skipped!</b>";
+
+		markup = MarkupHelper.createLabel(log_text, ExtentColor.YELLOW);
+		extentTest.get().log(Status.SKIP, markup);
+
+		// taking screenshot
+		try {
+			extentTest.get().addScreenCaptureFromPath(utils.takescreenshot_driver(testcaseMethod_Name, driver),
+					testcaseMethod_Name);
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+			System.out.println(e.getCause());
+			e.printStackTrace();
+		}
 	}
 
 	// IT WILL EXECUTE BY GIVING RESULT IN PERCENTAGE WITH SUCCESS PERCENT
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		
-		ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
-	}
-	
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-		
-		ITestListener.super.onTestFailedWithTimeout(result);
+
 	}
 
 	@Override
-		public void onStart(ITestContext context) 
-		{
-		ITestListener.super.onStart(context);
-		}
+	public void onTestFailedWithTimeout(ITestResult result) {
+
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+
+	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		// to notify extent, reporting is completed
 		extent_report.flush();
 	}
-	
+
 	@Override
-	public void transform(ITestAnnotation annotation,
-            Class testClass,
-            Constructor testConstructor,
-            Method testMethod) {
+	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 		annotation.setRetryAnalyzer(retryAnalyzer.class);
 	}
 }
