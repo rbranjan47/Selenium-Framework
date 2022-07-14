@@ -1,0 +1,250 @@
+Part -1: Basics of Java & Selenium
+
+1) Automation : A brief introduction to automation and the need for automation. How automation will enable you to beat competition and make you get the better jobs in market.
+• What is Automation Testing
+• Use of automation Testing
+• Tools for Automation Testing
+• Why automation is important for you career?
+• What is Selenium
+• Advantage of Selenium
+• Introduction to WebDriver
+
+2) Core Java/Programming : This class will set you up for understanding Basic OOPs and java concepts. These concepts will be extremely important for you to become a good Automation tester. This section is specially designed so that can be followed by any Manual test very easily.
+• Data Types and Variables
+• String Class
+• Arithmetic Operators & Concatenation operators
+• Conditional & Decision Making
+• Single Dimensional Array
+• Loops (For, While)
+• Classes and Objects
+• Class Constructors
+• Functions in Java 
+• Function Input Parameters 
+• Function Return Types
+
+Inheritance
+Polymorphism
+Encapsulation
+Data Hiding
+Method Overloading
+Method Overriding
+Abstract class
+Interface
+Exception Handling
+Super/This Keywords
+Final/Finally/Finalize Keywords
+Wrapper Classes
+String Manipulation
+Collections Basics (Array List, HashMap, Set)
+Interview Questions
+3) Eclipse IDE : This topic might seem little off place here but it’s very important topic to understand the tool you are using. Eclipse will the primary choice of development environment and we will discuss features of eclipse here.
+• How to use Eclipse
+• How to run, stop, pause
+• How to debug in Eclipse
+• Understanding console output
+• How to put a break point
+• How to add Watch variables
+• How to find errors from Problem window
+• Usage of step into and Step over debug functionality
+
+Interview Questions
+4) Set up Eclipse : We will start with setting up WebDriver, so that every participant start flaunting off their newly learnt skills by writing some cool test programs:
+• Download and install java
+• Download and start Eclipse
+• Download and configure WebDriver java client
+• Set up a project
+• Create packages
+• Create a First Java test case
+• Import WebDriver Source file
+
+Interview Questions
+5) WebDriver Interface : This topic will make you familiar with the concept of browsers in WebDriver and how to launch basic Firefox browser using WebDriver. Here we will also talk about WebDriver & WebElement interface which will enable us to answer many complicated Interview Questions about WebDriver Implementation.
+• Architecture of WebDriver
+• WebDriver Interface
+• WebElement Interface
+• Launching Firefox/Chrome/Safari
+
+Interview Questions
+6) Browser & Navigation Commands : This is something which everybody do very first thing when they learn Selenium. Opening & closing of browser and some navigation function on top of it.
+• How to Open a URL
+• Verify Page title
+• Strategy to get the Page Source 
+• Difference between Close & Quit
+• Ways to Navigate Back & Forward
+• How to Refresh Page
+• Another way of Navigating to specific Page
+
+Interview Questions
+7) WebElement Commands : An important and basic need of Selenium Automation. This part enables every participant to start writing automation test in their organizations. These are the most commonly used operations on any website.
+• Difference between FindElement & FindElements
+• Enter & Clear text from Input field
+• How Click action works differently on different elements
+• Managing Input fields, Buttons & Links
+• Finding all links on the Page
+• Extracting More than one object from a page 
+• Extracting Objects from a specific area of a web page 
+• Check if element is Present, Displayed, Enabled or Selected
+
+Interview Questions
+8) Locators : In this class we will start learning about HTML, how elements are defined inside HTML document and what are the different attributes that are associated with an HTML element. We also try to find elements based on its attribute values.
+• What are locators
+• HTML Basics
+• HTML language tags and attributes 
+• ID, Name, Xpath, CSS etc
+• Difference between Absolute & Complete Xpath
+• Finding your first element
+• WebElement Commands
+
+Interview Questions
+9) Element Identification : This part explains the lifesaver Add-Ons & tools for Selenium. Finding elements are the most common activity carried out in Selenium. These tools give us power to easily identify complex elements and help us in saving lot of time.
+• Element Inspector in Mozilla, Chrome and IE
+• Element locator tool for FF
+• Various HTML locator strategies
+• XPath Helper Plug-in for Chrome
+• Selection of Effective XPath
+• Handling Dynamic objects/ids on the page
+
+Interview Questions
+10) Tables, Checkboxes & Radio buttons : Many applications involve use of web tables and list boxes. These skills will help participant to get the expertise on complex tables structures and write effective automation test.
+• Identify table rows and columns
+• Extracting values from a cell
+• Dynamically Identify Tables Data
+• Select class in Selenium
+• Drop Down Handle
+• Select multiple values from the list
+• Select & Deselect operations by Index, Value & Visible Text
+
+Interview Questions
+11) Selenium Waits, Alert & Switch Windows : A little complexity will start now onwards. To use Waits effective is very important for every automation tester. Wait helps us in switching windows, handling pop-ups, operating alerts correctly.
+• Implicit and Explicit waits
+• How to use Expected Conditions with Waits
+• PageLoadTimeout & SetScriptTimeout property
+• Simple use of Thread Sleep
+• Concept of Fluent Wait in Selenium 
+• Strategy to poll for an object
+• WebDriverWait and its uses 
+• Different WaitUntil Conditions 
+• Managing Ajax based components 
+• Ways to handle Simple, Confirmation & Prompt Alert
+• Concepts of Set Interface in Java 
+• Difference between Window Handle & Handles 
+• Switching & Closing Windows, Tabs & PopUps
+• Concept of window ID 
+• Extracting window IDs with Selenium Object reference
+
+Interview Questions
+12) Actions Class
+This gives us power on recently build Application with latest and complex object features. Hovering mouse or simulate Mouse and Keyword operations can be done by using Action Class. A necessary thing to learn in Selenium journey.
+• What is Action Class & What can we do with Action Class
+• Mouse Hover & Mouse Movement with Action
+• Finding Coordinates of a Web Object
+• Drag and Drop Action
+
+Interview Questions
+13) Browser Profile: Different types of browser profiles and user authentication models with examples will be discussed in this class. You will need these to test secured websites and user authenticated websites.
+• What is Browser Profile
+• How to set up ChromeOptions and Firefox Options
+
+Part -2: Advanced Selenium
+
+14) TestNG Framework
+TestNG is a wonderful off the shelf framework that can be used directly to create your test framework. We will learn about this framework here.
+• What is TestNG
+• Benefits and Features of TestNG
+• How to download TestNG
+• Annotations in TestNg
+• How to run Test Suite in TestNG
+• Groups in TestNG
+• Depend On in TestNG
+• Test Case sequencing in TestNG
+• TestNG Reporters
+• TestNG Assets
+• TestNG Parameters
+• Multi Browser testing in TestNG
+• Parallel testing in TestNG
+
+Interview Questions
+15) Automation Framework
+This class will cover the concepts of Frameworks. After this the participant would got to know that which type of Framework works best for their Application and the pros & cons of the selected framework. Knowledge of frameworks is key skill to learn.
+• What is Automation Framework
+• Features of Automation Framework
+• Benefits of using Automation Framework
+• Different types of Automation Framework
+• What is Data Driven Framework
+
+• What is Hybrid Framework
+
+What is Page Object Model Design Pattern with Non Page Factory with OOP concepts
+Interview Questions 
+16) Real Time Live PROJECT – Selenium Hybrid Framework (POM)
+In this class we will explore some major frameworks by looking at the code and understanding the key component of the framework. 
+
+A real time web application will be taken and framework will be built on top of that which will simulate actual project scenarios.
+
+• Introduction and Component of Frameworks
+• Designing Test Data Provider (Excel)
+• Designing Run Data Provider (Text/Property file) 
+• Setting up Maven Build Tool
+• Data Provider Factory Design
+• Creating Page Objects & Object repository
+• Writing Test Script and Fetching Test Data
+• Designing Test Runner for Framework
+• Asserts, Test Fails & Error logging
+• Reporters, TestNG Listeners and Log file Generation
+• Running test with different Test Data
+• Generating the HTML reports : Extent Report, Allure Report, Emailable Report and PDF Report
+
+Interview Questions
+
+17) How to create project JARs (Generic Jars used by different teams)
+
+Normal library JAR
+Run JAR with Command Line Arguments
+How to add generic JAR as a build path in your Java Project
+How to add generic JAR as maven dependency in POM.xml in your Maven Project
+How to create libraries with FAT Jars
+18) Dev Ops & Continuous Integration
+
+Jenkins Setup Basics
+Running Script via Jenkins
+Jenkins PipeLine – Classic View
+Jenkins PipeLine – Blue Ocean
+Jenkins PipeLine Syntax
+Jenkins Report Generation using Extent Report, Allure, TestNG Report and Tesults Report
+Git WebHook with NgRok to trigger the build automatically
+GIT Repo/GIT HUB
+Learn how to use commit command
+What is cloning in GIT
+My First Code Check-in to GIT
+GIT PULL Request Process
+GIT CheckOut
+GIT Branching
+GIT Merge
+GIT Commit
+GIT ADD
+GIT Push, Fetch & Pull Commands
+GIT Clean
+ Maven Nexus Deployment
+Generation of FAT JAR
+19). Docker
+
+What is Docker
+What is Docker Container
+How to create account on Docker Hub
+Selenium Grid Configuration on Docker Hub
+Run your test cases on Dockerized Selenium Grid Hub – Node setup
+Setup Infrastructure using Docker Compose yml 
+Scale up the browsers at the run time
+Shut down the Docker Infrastructure
+Zalenium – Docker Setup
+Zalenium Live Preview
+Zalenium Test Dashboard
+Selenoid Grid Setup
+Selenoid with docker-compose and browsers.json
+20). AWS – Amazon Web Services – 
+Introduction
+Setup Account
+Create new EC2 Instance on AWS
+Create AMI, Security Group, VPC and Subnets
+Selenium Dockerized GRID Setup on AWS – EC2 machine
+Run Selenium test cases on AWS machine
